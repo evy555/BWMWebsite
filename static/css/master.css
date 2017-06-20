@@ -185,9 +185,47 @@ div.tabStrategies button.active {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
-.team {
-  border-spacing: 30px;
-  border-collapse: separate;
+.teamImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.teammember {
+  text-align: center;
+
+}
+
+.memberbio {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*Contact us styling*/
+#contactusTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scheduleCall {
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+#contactButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#contactInfo {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }

@@ -92,3 +92,11 @@
 h1 {
   text-align: center;
 }
+
+.tab {
+  display:none;
+}
+
+.tab.active {
+  display:block;
+}

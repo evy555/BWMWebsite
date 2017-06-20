@@ -76,7 +76,7 @@
 .info {
   background: rgba(255,255,255,1);
   height: 600px;
-  padding: 100px;
+  padding: 50px;
 }
 
 #spacer {
@@ -93,10 +93,101 @@ h1 {
   text-align: center;
 }
 
-.tab {
-  display:none;
+/*Fade Effect For Tabcontent*/
+
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
-.tab.active {
-  display:block;
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*Tab Styling for About Us */
+
+div.tabAbout {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.tabAbout button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+div.tabAbout button:hover {
+  background-color: #ddd;
+}
+
+div.tabAbout button.active {
+  background-color: #ccc;
+}
+
+.tabcontentAbout {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+
+/*Tab styling for Strategies*/
+
+div.tabStrategies {
+  float: left;
+  padding-top: 5px;
+}
+
+div.tabStrategies button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 2px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div.tabStrategies button:hover {
+  background-color: #ddd;
+}
+
+div.tabStrategies button.active {
+  background-color: #ccc;
+}
+
+.tabcontentStrategies {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/*Team Information Styling*/
+
+#teaminfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team {
+  border-spacing: 30px;
+  border-collapse: separate;
 }

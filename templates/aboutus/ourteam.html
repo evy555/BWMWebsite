@@ -1,3 +1,17 @@
+{% load staticfiles %}
 
 
-<p>Our Team</p>
+<div class="container" id="teaminfo">
+  <table class='team'>
+    <tr>
+      <td><img src="{% static 'images/Jack.jpg' %}" id="Jack" class='teamImage'></td>
+      <td><img src="{% static 'images/Karsten.png' %}" id="Karsten" class='teamImage'></td>
+      <td><img src="{% static 'images/Josh.jpg' %}" id="Josh" class='teamImage'></td>
+    </tr>
+    <tr>
+      <td><h3>Jack Bowers</h3></td>
+      <td><h3>Karsten Dornseif</h3></td>
+      <td><h3>Josh Evans</h3></td>
+    </tr>
+  </table>
+</div>

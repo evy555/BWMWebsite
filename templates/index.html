@@ -16,6 +16,8 @@
         <h3>Leave Worry Behind</h3>
 </div>
 
+<div class="hiddenpoint" id="whymarker"><span></span></div>
+
 <section class="container-fluid info" id="why">
   <h1>Why Bowers Wealth Management</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -26,22 +28,21 @@
 
 <section class="container-fluid info tabs" id="aboutus">
   <h1>About Us</h1>
-  <ul class='tab-links'>
-    <li class='active'><a href="#tab1">About Us</a></li>
-    <li><a href="#tab2">Our Team</a></li>
-  </ul>
-
-  <div class="tab-content">
-    <div id='tab1' class="tab active">
-      {% include "aboutus/general.html" %}
-    </div>
-
-    <div id="tab2" class="tab">
-      {% include "aboutus/ourteam.html" %}
-
-    </div>
-
+  <div class="tabAbout">
+    <button class='tablinksAbout' onclick="openTab(event, 'tab1About', 'About')" id="aboutDefaultOpen">General Info</button>
+    <button class='tablinksAbout' onclick="openTab(event, 'tab2About', 'About')">Our Team</button>
   </div>
+
+
+  <div id='tab1About' class="tabcontentAbout">
+    {% include "aboutus/general.html" %}
+  </div>
+
+  <div id="tab2About" class="tabcontentAbout">
+    {% include "aboutus/ourteam.html" %}
+  </div>
+
+
 
 </section>
 
@@ -57,6 +58,42 @@
 
 <section class="container-fluid info" id="strategies">
   <h1>Investment Strategies</h1>
+  <div class="tabStrategies">
+    <h5><u>Sector Strategies</u></h5>
+    <button class="tablinksStrategies" onclick="openTab(event, 'TESelect', 'Strategies')" id="strategyDefaultOpen">TE Select</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'Med-High', 'Strategies')">Medium-High</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'Med', 'Strategies')">Medium</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'Med-Low', 'Strategies')">Medium-Low</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'Low', 'Strategies')">Low</button>
+    <h5><u>Non-Sector Strategies</u></h5>
+    <button class="tablinksStrategies" onclick="openTab(event, 'NSHigh', 'Strategies')">NS High</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'TEGrowth', 'Strategies')">TE Growth</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'AggrGI', 'Strategies')">Aggressive G&I</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'NSMed-Low', 'Strategies')">NS Medium-Low</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'NSLow', 'Strategies')">NS Low</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'Intl', 'Strategies')">International</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'AllWorld', 'Strategies')">All World ETF</button>
+    <h5><u>Income Strategies</u></h5>
+    <button class="tablinksStrategies" onclick="openTab(event, 'IncomewG', 'Strategies')">Income with Growth</button>
+    <button class="tablinksStrategies" onclick="openTab(event, 'Income', 'Strategies')">Income</button>
+  </div>
+
+  <div id="TESelect" class="tabcontentStrategies"><p>1</p></div>
+  <div id="Med-High" class="tabcontentStrategies"><p>2</p></div>
+  <div id="Med" class="tabcontentStrategies"><p>3</p></div>
+  <div id="Med-Low" class="tabcontentStrategies"><p>4</p></div>
+  <div id="Low" class="tabcontentStrategies"><p>5</p></div>
+  <div id="NSHigh" class="tabcontentStrategies"><p>6</p></div>
+  <div id="TEGrowth" class="tabcontentStrategies"><p>7</p></div>
+  <div id="AggrGI" class="tabcontentStrategies"><p>8</p></div>
+  <div id="NSMed-Low" class="tabcontentStrategies"><p>9</p></div>
+  <div id="NSLow" class="tabcontentStrategies"><p>10</p></div>
+  <div id="Intl" class="tabcontentStrategies"><p>11</p></div>
+  <div id="IncomewG" class="tabcontentStrategies"><p>12</p></div>
+  <div id="Income" class="tabcontentStrategies"><p>13</p></div>
+  <div id="AllWorld" class="tabcontentStrategies"><p>14</p></div>
+
+
 </section>
 
 <div class="container-fluid" id="spacer"></div>

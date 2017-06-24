@@ -1,0 +1,68 @@
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Asset', 'Allocation'],
+      ['Income Funds', 100],
+    ]);
+
+    var options = {
+      title: "Asset Allocation",
+      pieHole: 0.4,
+      legend: 'none',
+      width:250,
+      pieSliceText:'none',
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartI'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+<div class="container strategiesContainer">
+
+  <div id="donutchartI" style="width: 250px; height: 200px; float: left"></div>
+  <div style="float: left;">
+    <h2>Income Portfolio</h2>
+    <h3>Number of funds held: 3-6</h3>
+    <h3>Relative Volatility: 0.0 to 0.4</h3>
+  </div>
+
+</div>
+<div class="container strategyInfoContainer">
+  <p>The Income Portfolio seeks a high level of current income by investing in bond funds. Typically it will hold 3-6
+funds, representing over 1000 unique bond positions. Foreign bond exposure will usually range between 0-15%.
+Bond funds from Fidelity’s retail lineup are normally used, but we may opt to hold non-Fidelity income funds if a
+particular category is not well-served under the Fidelity umbrella. The portfolio aims for a low level of risk
+while keeping up with inflation over the long run.
+The Income Portfolio normally blends government bond funds, investment grade bond funds, high income funds, and
+short-term funds, striving for a degree of balance through diversification of credit risk and interest-rate sensitivity.
+We try to realize some capital appreciation, but the primary focus is to generate income. The portfolio does not
+usually invest in municipal bond funds.
+To manage bond market risk, we consider the market’s sensitivity to both credit risk and interest-rate risk, while
+attempting to overweight funds that minimize overall volatility. For example, if we perceive deflation to be the main
+economic risk, we may overweight our position in government bond funds. If rising interest rates are the primary
+risk factor, we may emphasize short-term bond funds and high-yield bond funds.
+The Income Portfolio normally holds actively managed funds, but may invest in bond index funds during periods of
+high uncertainty, or if we believe market conditions make it difficult for active bond managers to outperform their
+indexes. Non-traditional income funds that focus on specific categories – such as real estate income, floating
+rate notes, or inflation-hedged bond funds – may be held if we believe their potential performance rivals that of
+traditional bond funds. We include such funds only if we can do so without significantly increasing overall risk.
+During bearish bond market conditions, the portfolio may place some or all of its holdings in money market
+funds. We may also choose to hold money market positions in the event that bond yields are not high enough to
+sufficiently compensate investors for their added risk.
+Stock funds are excluded from this portfolio to limit overall risk. However, some income funds and conservative
+asset allocation funds include a small amount of equity exposure to help reduce their overall volatility. As a
+result, the Income Portfolio may carry a small amount of stock exposure. The overall stock weighting is not
+expected to exceed 10%.
+Some bond funds that invest in high-yield or emerging market debt may include defaulted securities or bonds
+with significant political risk. Such securities will usually account for only a small portion of holdings</p>
+</div>
+
+</body>

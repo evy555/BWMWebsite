@@ -1,0 +1,70 @@
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Asset', 'Allocation'],
+      ['Diversified Stock/Bond Funds', 67],
+      ['Domestic Sector Funds', 33],
+    ]);
+
+    var options = {
+      title: "Asset Allocation",
+      pieHole: 0.4,
+      legend: 'none',
+      width:250,
+      pieSliceText:'none',
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartML'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+<div class="container strategiesContainer">
+
+  <div id="donutchartML" style="width: 250px; height: 200px; float: left"></div>
+  <div style="float: left;">
+    <h2>Medium-Low Risk Portfolio</h2>
+    <h3>Number of funds held: 7-10</h3>
+    <h3>Relative Volatility: 0.6 to 1.0</h3>
+  </div>
+
+</div>
+<div class="container strategyInfoContainer">
+  <p>The Medium-Low Risk Portfolio seeks long-term growth by investing in a combination of sector funds, stock
+funds, and bond funds (balanced or asset allocation funds may also be held). It aims for a neutral mix of 80%
+stock and 20% bond. Usually the portfolio will hold six different Fidelity Select funds, and two or three domestic
+funds that hold stocks, bonds or a blend of stocks and bonds. Foreign exposure will typically range between
+0-15%. The portfolio will usually have several hundred unique underlying stock positions, and more than 1000
+unique underlying bond positions. Under certain market conditions, we may include a foreign funds.
+The domestic sector portion of the portfolio attempts to invest in industry groups that are in the process of being
+recognized for their long-term potential. Such sectors are identified through the study of long-term trends,
+valuation levels and other fundamentals. Together, these funds account for about 200 unique stock holdings,
+but there can be significant overlap between sectors. In addition, many of the sector funds are heavily
+concentrated, with their top10 holdings sometimes accounting for more than 50% of assets.
+When choosing diversified stock funds for this portfolio, factors we consider include historical performance,
+overall volatility, stylebox position, industry sector weighting, cash level, foreign exposure, expense ratio, and
+manager history.
+The bond portion of the portfolio may include bond funds, conservative asset allocation funds, real estate
+income funds, or capital preservation funds. Generally speaking, we strive for funds that are inversely correlated
+with the stock market in order to maintain a neutral volatility level of 0.8.
+Balanced or asset allocation funds may be used as a core position in this portfolio, especially if we believe that
+these types of funds have the potential to deliver superior risk-adjusted returns.
+The Medium-Low Risk Portfolio aims to significantly outperform inflation. Most or all of its holdings are
+chosen from Fidelity’s retail mutual fund family because we believe this provides improved risk-adjusted
+performance relative to competing alternatives, but it may invest in non-Fidelity funds if improved riskadjusted
+performance is believed to be available in a particular category. The portfolio typically holds
+actively managed funds, but may invest in index funds during periods of heightened uncertainty. Alternative
+holdings (such as high-yield bond funds, foreign bond funds, or real estate income funds) may also be held
+if valuations are deemed compelling.
+During bearish market conditions the portfolio may become more defensive by increasing its bond weighting,
+but money market funds are not normally held.</p>
+</div>
+
+</body>

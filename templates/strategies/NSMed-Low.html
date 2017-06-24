@@ -1,0 +1,69 @@
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Asset', 'Allocation'],
+      ['Diversified Stock Funds', 60],
+      ['Asset Allocation or Income Funds', 60],
+    ]);
+
+    var options = {
+      title: "Asset Allocation",
+      pieHole: 0.4,
+      legend: 'none',
+      width:250,
+      pieSliceText:'none',
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartNSML'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+<div class="container strategiesContainer">
+
+  <div id="donutchartNSML" style="width: 250px; height: 200px; float: left"></div>
+  <div style="float: left;">
+    <h2>Non-Sector Medium-Low Risk Portfolio</h2>
+    <h3>Number of funds held: 3-6</h3>
+    <h3>Relative Volatility: 0.6 to 1.0</h3>
+  </div>
+
+</div>
+<div class="container strategyInfoContainer">
+  <p>The Non-Sector Medium-Low Risk Portfolio seeks long-term growth by investing in diversified stock funds
+and asset allocation funds, with a target mix of 80% stock and 20% bond. Typically it will hold 3-6 domestic
+stock funds, representing roughly 300-400 unique stock positions. Foreign exposure will usually range between
+5-20%. The diversified stock fund choices are normally from Fidelity’s retail lineup, but we may opt to hold a
+non-Fidelity fund if a particular stylebox is not well-served under the Fidelity umbrella. The portfolio does not
+try to outperform the S&P 500, but it does aim to keep significantly ahead of inflation over the long run, while
+keeping overall volatility at or below that of the S&P 500.
+The portfolio normally chooses a mix of broadly diversified stock funds and bond / asset allocation funds, with
+each fund providing a degree of balance through industry group weighting differences, stylebox variation, or
+foreign exposure. Other factors considered include risk-adjusted performance, overall volatility, cash/bond
+level, expense ratio, and manager history. We may also evaluate stock funds from the standpoint of active share and
+tracking error. This assessment provides insight into how the manager is positioning the portfolio. Studies
+have shown that funds with high active share and low tracking error tend to outperform their peers.
+We also look for funds that have overweighted positions in industry groups that are being recognized for their
+long-term potential, while at the same time avoiding funds that carry heavy exposure to groups that may carry
+more risk than usual. We form an opinion about these sectors through the study of long-term trends, valuation
+levels and other fundamentals, and may favor funds that hold what we believe to be a favorable mix of sectors.
+The Non-Sector Medium-Low Risk Portfolio normally holds actively managed funds, but may invest in
+index funds during periods of uncertainty or if we believe that large-cap stocks will lead the market. Funds
+from alternative asset classes – such as foreign stocks, convertible securities, high-yield bonds, or real estate –
+may be held in the portfolio if we believe their potential performance rivals that of domestic stock funds on a
+risk-adjusted basis.
+During bearish market conditions the portfolio may increase its weighting in bond / asset allocation funds, but
+such defensive measures are not expected to be routine. We believe a stable allocation generates a higher long-term
+return than trying to boost stock exposure during bullish periods, or reduce it during a bear market.
+Dedicated sector funds are excluded from this portfolio to reduce small-cap exposure and keep the portfolio
+more closely correlated with broad-based stock and bond indexes.</p>
+</div>
+
+</body>

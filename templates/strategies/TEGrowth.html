@@ -1,0 +1,69 @@
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Asset', 'Allocation'],
+      ['Diversified Stock Funds', 100],
+    ]);
+
+    var options = {
+      title: "Asset Allocation",
+      pieHole: 0.4,
+      legend: 'none',
+      width:250,
+      pieSliceText:'none',
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartTEG'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+<div class="container strategiesContainer">
+
+  <div id="donutchartTEG" style="width: 250px; height: 200px; float: left"></div>
+  <div style="float: left;">
+    <h2>Tax-Efficient Growth Portfolio</h2>
+    <h3>Number of funds held: 3-6</h3>
+    <h3>Relative Volatility: 0.8 to 1.2</h3>
+  </div>
+
+</div>
+<div class="container strategyInfoContainer">
+  <p>The Tax-Efficient Growth Portfolio seeks long-term growth by investing in diversified stock funds. Typically it
+will hold 3-6 domestic stock funds, representing roughly 300-400 unique stock positions. Foreign exposure will
+usually range between 10-30%. The diversified stock fund holdings are normally from Fidelity’s retail lineup,
+but we may opt to hold a non-Fidelity fund if a particular stylebox is not well-served under the Fidelity umbrella.
+The portfolio competes with the S&P 500 index.
+The portfolio normally chooses broadly diversified stock funds, with each fund providing a degree of balance
+through industry group weighting differences, stylebox variation, or foreign exposure. Other factors considered
+include risk-adjusted performance, overall volatility, cash/bond level, expense ratio, and manager history.
+We may also evaluate stock funds from the standpoint of active share and tracking error. This assessment provides
+insight into how the manager is positioning the portfolio. Studies have shown that funds with high active
+share and low tracking error tend to outperform their peers.
+We also look for funds that have overweighted positions in industry groups that are being recognized for their
+long-term potential, while at the same time avoiding funds that carry heavy exposure to groups that may carry
+more risk than usual. We form an opinion through the study of long-term trends, valuation levels and other
+fundamentals, and as a result may favor funds that in our view hold a favorable mix of sectors.
+To achieve a higher level of tax efficiency, the Tax-Efficient Growth Portfolio attempts to hold profitable
+positions long enough to qualify for long-term capital gains treatment. Less often, it may sell losing positions
+and move to a substitute sector if an opportunity exists to book a short-term loss with minimum risk of a wash
+sale. On occasion, the portfolio may still book short-term gains in an attempt to maximize after-tax performance, or
+if we expect offsetting short-term losses. The portfolio makes some effort to minimize the tax impact of capital
+gains distributions, but this is not a major focus because Fidelity funds tend to distribute most of their profits in
+the form of long-term capital gains.
+The Tax-Efficient Growth Portfolio normally holds actively managed funds, but may invest in index funds
+during periods of uncertainty or if we believe large-cap stocks will lead the market. Funds from alternative
+asset classes – such as foreign stocks, high-yield bonds, or real estate – may be held if we believe their potential
+performance rivals that of domestic stock funds.
+During bearish market conditions the portfolio may invest some of its holdings in asset allocation funds that
+blend stocks and bonds, but such defensive measures are not expected to be routine.</p>
+</div>
+
+</body>

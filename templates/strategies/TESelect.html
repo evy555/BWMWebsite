@@ -1,0 +1,64 @@
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Asset', 'Allocation'],
+      ['Domestic Sector Funds', 100],
+    ]);
+
+    var options = {
+      title: "Asset Allocation",
+      pieHole: 0.4,
+      legend: 'none',
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartTE'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+<div class="container strategiesContainer">
+
+  <div id="donutchartTE" style="width: 250px; height: 200px; float: left"></div>
+  <div style="float: left;">
+    <h2>Tax-Efficient Select Portfolio</h2>
+    <h3>Number of funds held: 5-10</h3>
+    <h3>Relative Volatility: 1.0 to 1.4</h3>
+  </div>
+
+</div>
+<div class="container strategyInfoContainer">
+  <p>The Tax-Efficient Select Portfolio seeks long-term growth by investing in domestic sector funds from Fidelity’s
+Select family. It holds a combination of sector funds, with a typical weighting range of 5-20% for each position.
+While some effort is made to diversify the portfolio among the ten major industry groups, there are no specific limits
+on sector concentration. At times the portfolio may have a heavy concentration in one particular industry group,
+such as financial services or technology. The portfolio competes with the S&P 500 index.
+We attempt to invest in industry groups that may benefit from long-term changes in the economy, and in
+areas that benefit most from Fidelity research. Such sectors are identified through the study of long-term
+trends, valuation levels, other fundamentals, and by comparing fund performance and risk to underlying
+benchmarks.
+To achieve a higher level of tax efficiency, we attempt to hold profitable positions long enough to qualify for longterm
+capital gains treatment. Less often, we may sell losing positions and move to a substitute sector if we believe it's
+possible to book a short-term loss while minimizing chances of a wash sale. On occasion, the portfolio may still
+realize a short-term gain in an attempt to maximize after-tax performance, or if we believe offsetting short-term losses
+are available or can be realized. The portfolio does not normally try to minimize the tax impact of distributions. At
+times it may deviate significantly from the Select Portfolio, resulting in short-term performance that is significantly
+better or worse than the Select Portfolio.
+Although the Tax-Efficient Select Portfolio does not hold international funds, it will typically have a foreign
+stock weighting that ranges from 10-25%. This is due to foreign stock holdings within each Select fund.
+We don’t anticipate investing outside of Fidelity’s Select family, but the possibility exists that we may opt to
+purchase a non-Fidelity sector fund to meet our objectives. Such a need could arise either because a particular
+Fidelity Select fund may not be large enough to absorb client assets without creating excessive inflows, or because
+we may judge the performance of a Select fund to be hampered by inferior stock picks or high cash levels.
+During bearish conditions the portfolio may rotate into defensive sectors, but bond funds and money market
+funds are not normally held. We believe a fully invested strategy seeking attractively-positioned sectors is
+capable of a higher long-term return than one that tries to rotate between stocks and cash at the right time.</p>
+</div>
+
+</body>

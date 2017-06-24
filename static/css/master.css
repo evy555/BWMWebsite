@@ -79,6 +79,10 @@
   padding: 50px;
 }
 
+#strategies {
+  height: 700px;
+}
+
 #spacer {
   height: 300px;
   background: rgba(255,255,255,.5);
@@ -141,6 +145,43 @@ div.tabAbout button.active {
   animation: fadeEffect 1s;
 }
 
+/*Tab styling for Services*/
+
+div.tabServices {
+  float: left;
+  padding-top: 5px;
+}
+
+div.tabServices button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 2px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div.tabServices button:hover {
+  background-color: #ddd;
+}
+
+div.tabServices button.active {
+  background-color: #ccc;
+}
+
+.tabcontentServices {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
 
 /*Tab styling for Strategies*/
 
@@ -171,7 +212,7 @@ div.tabStrategies button.active {
 }
 
 .tabcontentStrategies {
-  float: left;
+  margin: 0 auto;
   padding: 0px 12px;
   width: 70%;
   border-left: none;
@@ -208,9 +249,7 @@ div.tabStrategies button.active {
 
 /*Contact us styling*/
 #contactusTable {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 #scheduleCall {
@@ -228,4 +267,59 @@ div.tabStrategies button.active {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+}
+
+#contactusTable td {
+  text-align: center;
+}
+
+
+/*Strategies Info Styling*/
+
+.strategiesContainer {
+  height: 200px;
+  margin: 0 auto;
+  padding-left: 180px;
+  padding-bottom: 0px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.strategyInfoContainer {
+  padding-right: 70px;
+}
+
+#footer table#legal {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer a{
+  padding: 10px;
+  color: white;
+}
+
+.affiliate {
+  height: 100px;
+}
+
+caption {
+  color: white;
+}
+
+#Fees {
+  height: 200px;
+  margin: 0 auto;
+  padding-left: 180px;
+  padding-bottom: 0px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.feeContainer h2 {
+  text-align: center;
 }

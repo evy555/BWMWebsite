@@ -1,0 +1,70 @@
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Asset', 'Allocation'],
+      ['Stock Funds', 30],
+      ['Bond Funds', 70],
+    ]);
+
+    var options = {
+      title: "Asset Allocation",
+      pieHole: 0.4,
+      legend: 'none',
+      width:250,
+      pieSliceText:'none',
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartIwG'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+<div class="container strategiesContainer">
+
+  <div id="donutchartIwG" style="width: 250px; height: 200px; float: left"></div>
+  <div style="float: left;">
+    <h2>Income with Growth Portfolio</h2>
+    <h3>Number of funds held: 4-8</h3>
+    <h3>Relative Volatility: 0.3 to 0.5</h3>
+  </div>
+
+</div>
+<div class="container strategyInfoContainer">
+  <p>The Income with Growth Portfolio seeks to outperform inflation by investing in a low-volatility mix of stock funds
+and bond funds. Typically it will hold 4-8 funds, representing hundreds of unique stock positions and thousands
+of unique bond positions. Foreign exposure (both stocks and bonds) will usually be held to less than 30% of
+overall assets. Stock funds and bond funds from Fidelity’s retail lineup are normally used, but in an unusual
+situation we may opt to hold non-Fidelity funds if a particular category is not well-served under the Fidelity
+umbrella.
+The Income with Growth Portfolio normally blends stock funds and bond funds in an approximate 30/70
+ratio, but we may vary that mix in order to stay on target from a volatility standpoint. The bond side of the
+portfolio will focus mainly on domestic investment-grade debt, but may include some exposure to highyield
+debt (both domestic and foreign), emerging country debt, real estate income securities, or inflationprotected
+bonds. The stock side of the portfolio will usually maintain a balanced mix of domestic large-cap
+stocks, but may include some exposure to smaller stocks, foreign stocks, convertibles, real estate equity securities, or
+commodities. The portfolio does not usually invest in municipal bond funds.
+To manage volatility on the bond side, we consider the market’s sensitivity to both credit risk and interest-rate
+risk, seeking to hold a combination of funds that will offset the portfolio’s equity risk to the greatest degree
+possible, while delivering income that has the potential to keep the bond side growing at the rate of inflation or
+higher.
+To manage volatility on the stock side, we consider valuation levels across the stylebox in combination
+with volatility levels, seeking to hold a mix of funds that will meet the portfolio’s overall volatility target
+while providing a degree of protection against rising interest rates and giving the portfolio the potential to
+finish significantly ahead of inflation over the long run.
+The Income with Growth Portfolio normally holds actively managed funds, but may invest in index funds
+during periods of high uncertainty (or if we believe market conditions make it difficult for active managers to
+outperform their indexes).
+During bearish market conditions, the portfolio may reduce its equity exposure or place a significant portion
+of its bond holdings in short-term funds, but normally we will resist any market timing moves. Because this
+portfolio holds both stocks and bonds and maintains a relatively low risk blend of those asset classes, the risk of
+loss is not usually as great as other portfolios that carry a higher stock weighting or lack inflation protection.</p>
+</div>
+
+</body>

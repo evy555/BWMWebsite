@@ -11,8 +11,8 @@
 
 
 <div class="container-fluid" id='jumbo'>
-      <img src="{% static 'images/logo.jpg' %}" alt="" id='jumbotop'>
-      <h1>Bowers Wealth Management<h1>
+      <img src="{% static 'images/LogoNoText.jpg' %}" alt="" id='jumbotop'>
+      <h1>Comprehensive Investment Management<h1>
         <h3>Leave Worry Behind</h3>
 </div>
 
@@ -51,6 +51,16 @@
 <section class="container-fluid info" id='firmservices'>
   <h1>Firm Services</h1>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="tabServices">
+    <button class="tablinksServices" onclick="openTab(event, 'Services', 'Services')" id="servicesDefaultOpen">Investment Management</button>
+    <button class="tablinksServices" onclick="openTab(event, 'Planning', 'Services')">Financial Planning</button>
+    <button class="tablinksServices" onclick="openTab(event, 'Fees', 'Services')">Management Fees</button>
+  </div>
+  <div id="Services" class="tabcontentServices"><p>Services</p></div>
+  <div id="Planning" class="tabcontentServices"><p>Planning</p></div>
+  <div id="Fees" class="tabcontentServices">{% include 'firmservices/fees.html' %}</div>
+
+
 
 </section>
 
@@ -78,20 +88,20 @@
     <button class="tablinksStrategies" onclick="openTab(event, 'Income', 'Strategies')">Income</button>
   </div>
 
-  <div id="TESelect" class="tabcontentStrategies"><p>1</p></div>
-  <div id="Med-High" class="tabcontentStrategies"><p>2</p></div>
-  <div id="Med" class="tabcontentStrategies"><p>3</p></div>
-  <div id="Med-Low" class="tabcontentStrategies"><p>4</p></div>
-  <div id="Low" class="tabcontentStrategies"><p>5</p></div>
-  <div id="NSHigh" class="tabcontentStrategies"><p>6</p></div>
-  <div id="TEGrowth" class="tabcontentStrategies"><p>7</p></div>
-  <div id="AggrGI" class="tabcontentStrategies"><p>8</p></div>
-  <div id="NSMed-Low" class="tabcontentStrategies"><p>9</p></div>
-  <div id="NSLow" class="tabcontentStrategies"><p>10</p></div>
-  <div id="Intl" class="tabcontentStrategies"><p>11</p></div>
-  <div id="IncomewG" class="tabcontentStrategies"><p>12</p></div>
-  <div id="Income" class="tabcontentStrategies"><p>13</p></div>
-  <div id="AllWorld" class="tabcontentStrategies"><p>14</p></div>
+  <div id="TESelect" class="tabcontentStrategies"><p>{% include 'strategies/TESelect.html' %}</p></div>
+  <div id="Med-High" class="tabcontentStrategies"><p>{% include 'strategies/Med-High.html' %}</p></div>
+  <div id="Med" class="tabcontentStrategies"><p>{% include 'strategies/Medium.html' %}</p></div>
+  <div id="Med-Low" class="tabcontentStrategies"><p>{% include 'strategies/Med-Low.html' %}</p></div>
+  <div id="Low" class="tabcontentStrategies"><p>{% include 'strategies/Low.html' %}</p></div>
+  <div id="NSHigh" class="tabcontentStrategies"><p>{% include 'strategies/NSHigh.html' %}</p></div>
+  <div id="TEGrowth" class="tabcontentStrategies"><p>{% include 'strategies/TEGrowth.html' %}</p></div>
+  <div id="AggrGI" class="tabcontentStrategies"><p>{% include 'strategies/AggGI.html' %}</p></div>
+  <div id="NSMed-Low" class="tabcontentStrategies"><p>{% include 'strategies/NSMed-Low.html' %}</p></div>
+  <div id="NSLow" class="tabcontentStrategies"><p>{% include 'strategies/NSLow.html' %}</p></div>
+  <div id="Intl" class="tabcontentStrategies"><p>{% include 'strategies/International.html' %}</p></div>
+  <div id="IncomewG" class="tabcontentStrategies"><p>{% include 'strategies/IncomewGrowth.html' %}</p></div>
+  <div id="Income" class="tabcontentStrategies"><p>{% include 'strategies/Income.html' %}</p></div>
+  <div id="AllWorld" class="tabcontentStrategies"><p>{% include 'strategies/AllWorldETF.html' %}</p></div>
 
 
 </section>

@@ -1,0 +1,69 @@
+<head>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load("current", {packages:["corechart"]});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Asset', 'Allocation'],
+      ['Diversified Stock Funds', 55],
+      ['Domestic Sector Funds', 45],
+    ]);
+
+    var options = {
+      title: "Asset Allocation",
+      pieHole: 0.4,
+      legend: 'none',
+      width:250,
+      pieSliceText:'none',
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('donutchartM'));
+    chart.draw(data, options);
+  }
+</script>
+</head>
+
+<body>
+<div class="container strategiesContainer">
+
+  <div id="donutchartM" style="width: 250px; height: 200px; float: left"></div>
+  <div style="float: left;">
+    <h2>Medium Risk Portfolio</h2>
+    <h3>Number of funds held: 7-10</h3>
+    <h3>Relative Volatility: 0.8 to 1.2</h3>
+  </div>
+
+</div>
+<div class="container strategyInfoContainer">
+  <p>The Medium Risk Portfolio seeks long-term growth by investing approximately 45% of assets in domestic
+sector funds (typically Fidelity Select Portfolios), and 55% in diversified stock funds. Usually it will hold six
+different sector funds and two or three diversified stock funds. The diversified stock fund holdings are normally
+domestic growth funds from Fidelity’s lineup, but if foreign valuations are attractive the portfolio may invest in
+an international fund – usually for 5-15% of the total portfolio.
+The domestic sector portion of the portfolio attempts to invest in industry groups that are in the process of being
+recognized for their long-term potential. Such sectors are identified through the study of long-term trends,
+valuation levels and other fundamentals. Together, these funds account for about 200 unique stock holdings,
+but there can be significant overlap between sectors. In addition, many of the sector funds are heavily
+concentrated, with their top10 holdings sometimes accounting for more than 50% of assets.
+The diversified portion of the portfolio attempts to invest in attractively positioned non-sector stock funds, both
+domestic and foreign. Factors considered include historical performance, overall volatility, stylebox position,
+industry mix, cash level, foreign weighting, expense ratio, and manager history. An effort is also made to pick
+diversified funds that complement the sector side of the portfolio, with a goal of reducing overall volatility. We
+may also evaluate stock funds from the standpoint of active share and tracking error. This assessment provides
+insight into how the manager is positioning the portfolio. Studies have shown that funds with high active
+share and low tracking error tend to outperform their peers.
+Typically, the Medium Risk Portfolio holds the equivalent of 300-400 unique stock positions, and is fully
+invested in stock funds. It competes with the S&P 500 index. It focuses heavily on Fidelity’s retail mutual
+funds because we believe this provides improved risk-adjusted performance relative to competing alternatives,
+but may invest in non-Fidelity funds if we believe improved risk-adjusted performance is available for a
+particular objective. The portfolio typically holds actively managed funds, but may invest in index funds during
+periods of uncertainty or when we believe large-cap stocks will lead the market. Alternative holdings, such as
+high-yield bond funds or real estate funds, may be used for a portion of the portfolio if valuations are deemed
+compelling.
+During bearish market conditions the portfolio may become more defensive, but money market funds and
+investment-grade bond funds are not usually held.</p>
+</div>
+
+</body>

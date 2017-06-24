@@ -1,0 +1,36 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="chart_div"></div>
+
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['$Amount', 'Fee', { role: 'annotation' }],
+      ['First $100,000', .0012, '1.2%'],
+      ['Next $100,000', .001, '1.0%'],
+      ['Next $100,000', .0008, '0.8%'],
+      ['Next $100,000', .0006, '0.6%'],
+      ['>$400,000', .0004, '0.4%'],
+    ]);
+
+      // Optional; add a title and set the width and height of the chart
+      var options = {
+        'width': 800,
+        'height':300,
+        'legend':'none',
+        'enableInteractivity': false,
+      }
+
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.ColumnChart(document.getElementById('feechart'));
+      chart.draw(data, options);
+}
+</script>
+
+<div class="feeContainer">
+  <h2>Management Fee Schedule</h2>
+  <div id="feechart" style='width: 100%; height: 80%;'></div>
+</div>

@@ -55,6 +55,21 @@
   {% endblock %}
 
   <section class="container-fluid" id='footer'>
+    <table id="legal">
+      <tr>
+        <td><a href="#">Legal Information</a></td>
+        <td><a href="#">Privacy Policy</a></td>
+      </tr>
+    </table>
+
+    <table>
+
+      <tr id="affiliateLinks">
+        <caption><h3>Affiliates</h3></caption>
+        <td><a href="#"><img src="{% static 'images/Fidelity1.png' %}" alt="" class='affiliate' id="FidelityLogo"></a></td>
+        <td><a href="#"><img src="{% static 'images/fmi_logo.jpg' %}" alt="" class='affiliate' id="FMANDILogo"></a></td>
+      </tr>
+    </table>
   </section>
 
   <!-- JQuery -->
@@ -86,6 +101,7 @@
   <!-- Open default tabs  -->
   <script>document.getElementById("aboutDefaultOpen").click();</script>
   <script>document.getElementById("strategyDefaultOpen").click();</script>
+  <script>document.getElementById("servicesDefaultOpen").click();</script>
 
 
   </body>

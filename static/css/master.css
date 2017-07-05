@@ -308,6 +308,12 @@ div.tabStrategies button.active {
   justify-content: center;
 }
 
+#contactusSubmitButton {
+  width: 100px;
+  height: 50px;
+
+}
+
 
 /*Strategies  Styling*/
 .strategiesContainer {

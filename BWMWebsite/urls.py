@@ -20,6 +20,9 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.HomePage.as_view(),name='home'),
+    url(r'contactus/$', views.ContactUs.as_view(), name='contactus'),
+    url(r'thankyou/$', views.ThankYou.as_view(), name='thankyou'),
+    url(r'privacy/$', views.PrivacyPolicy.as_view(), name='privacy'),
     # url(r'^ModelDescriptions/',include('ModelDescriptions.urls',namespace='ModelDescriptions')),
     # url(r'^Viewpoints/',include('Viewpoints.urls',namespace='Viewpoints')),
 ]

@@ -14,9 +14,10 @@
     var options = {
       title: "Asset Allocation",
       pieHole: 0.4,
-      legend: 'none',
-      width:250,
+      legend: {position: 'left'},
       pieSliceText:'none',
+      backgroundColor: "transparent",
+      chartArea: {width: "90%"},
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchartIwG'));
@@ -26,17 +27,17 @@
 </head>
 
 <body>
-<div class="container strategiesContainer">
+<div class="strategiesContainer">
 
-  <div id="donutchartIwG" style="width: 250px; height: 200px; float: left"></div>
-  <div style="float: left;">
-    <h2>Income with Growth Portfolio</h2>
-    <h3>Number of funds held: 4-8</h3>
-    <h3>Relative Volatility: 0.3 to 0.5</h3>
+  <div id="donutchartIwG" class="donutchart"></div>
+  <div class="strategyLabel">
+    <h3>Income with Growth Portfolio</h3>
+    <h4>Number of funds held: 4-8</h4>
+    <h4>Relative Volatility: 0.3 to 0.5</h4>
   </div>
 
 </div>
-<div class="container strategyInfoContainer">
+<div class="strategyInfoContainer">
   <p>The Income with Growth Portfolio seeks to outperform inflation by investing in a low-volatility mix of stock funds
 and bond funds. Typically it will hold 4-8 funds, representing hundreds of unique stock positions and thousands
 of unique bond positions. Foreign exposure (both stocks and bonds) will usually be held to less than 30% of

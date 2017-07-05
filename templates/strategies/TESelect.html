@@ -13,7 +13,10 @@
     var options = {
       title: "Asset Allocation",
       pieHole: 0.4,
-      legend: 'none',
+      legend: {position: 'left'},
+      pieSliceText:'none',
+      backgroundColor: "transparent",
+      chartArea: {width: "90%"},
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchartTE'));
@@ -23,18 +26,18 @@
 </head>
 
 <body>
-<div class="container strategiesContainer">
 
-  <div id="donutchartTE" style="width: 250px; height: 200px; float: left"></div>
-  <div style="float: left;">
-    <h2>Tax-Efficient Select Portfolio</h2>
-    <h3>Number of funds held: 5-10</h3>
-    <h3>Relative Volatility: 1.0 to 1.4</h3>
+<div class="strategiesContainer">
+  <div id="donutchartTE" class="donutchart"></div>
+  <div class="strategyLabel">
+    <h3>Tax-Efficient Select Portfolio</h3>
+    <h4>Number of funds held: 5-10</h4>
+    <h4>Relative Volatility: 1.0 to 1.4</h4>
   </div>
-
 </div>
-<div class="container strategyInfoContainer">
-  <p>The Tax-Efficient Select Portfolio seeks long-term growth by investing in domestic sector funds from Fidelity’s
+
+<div class="strategyInfoContainer">
+<p>The Tax-Efficient Select Portfolio seeks long-term growth by investing in domestic sector funds from Fidelity’s
 Select family. It holds a combination of sector funds, with a typical weighting range of 5-20% for each position.
 While some effort is made to diversify the portfolio among the ten major industry groups, there are no specific limits
 on sector concentration. At times the portfolio may have a heavy concentration in one particular industry group,
@@ -60,5 +63,6 @@ During bearish conditions the portfolio may rotate into defensive sectors, but b
 funds are not normally held. We believe a fully invested strategy seeking attractively-positioned sectors is
 capable of a higher long-term return than one that tries to rotate between stocks and cash at the right time.</p>
 </div>
+
 
 </body>

@@ -1,6 +1,3 @@
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<div id="chart_div"></div>
-
 <script type="text/javascript">
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChart);
@@ -22,6 +19,8 @@
         'height':300,
         'legend':'none',
         'enableInteractivity': false,
+        'title': 'Management Fee Schedule',
+        titleTextStyle: {fontSize: 20, color: 'blue'},
       }
 
       // Display the chart inside the <div> element with id="piechart"
@@ -30,7 +29,4 @@
 }
 </script>
 
-<div class="feeContainer">
-  <h2>Management Fee Schedule</h2>
-  <div id="feechart" style='width: 100%; height: 80%;'></div>
-</div>
+<div id="feechart" style='width: 100%; height: 80%;'></div>

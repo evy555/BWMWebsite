@@ -14,9 +14,10 @@
     var options = {
       title: "Asset Allocation",
       pieHole: 0.4,
-      legend: 'none',
-      width:250,
+      legend: {position: 'left'},
       pieSliceText:'none',
+      backgroundColor: "transparent",
+      chartArea: {width: "90%"},
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchartMH'));
@@ -26,17 +27,17 @@
 </head>
 
 <body>
-<div class="container strategiesContainer">
+<div class="strategiesContainer">
 
-  <div id="donutchartMH" style="width: 250px; height: 200px; float: left"></div>
-  <div style="float: left;">
-    <h2>Medium-High Risk Portfolio</h2>
-    <h3>Number of funds held: 7-10</h3>
-    <h3>Relative Volatility: 0.9 to 1.3</h3>
+  <div id="donutchartMH" class="donutchart"></div>
+  <div class="strategyLabel">
+    <h3>Medium-High Risk Portfolio</h3>
+    <h4>Number of funds held: 7-10</h4>
+    <h4>Relative Volatility: 0.9 to 1.3</h4>
   </div>
 
 </div>
-<div class="container strategyInfoContainer">
+<div class="strategyInfoContainer">
   <p>The Medium-High Risk Portfolio seeks long-term growth by investing approximately 60% of assets in domestic
 sector funds (typically Fidelity Select Portfolios), and 40% in diversified stock funds. Usually it will hold six
 different sector funds and two or three diversified stock funds. The diversified stock fund holdings are normally

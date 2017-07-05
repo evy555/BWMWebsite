@@ -121,3 +121,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# Email Hosting information for contactus page
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'evansj5556@gmail.com'
+EMAIL_HOST_PASSWORD = 'Milkyway5!'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 25

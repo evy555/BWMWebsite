@@ -15,9 +15,10 @@
     var options = {
       title: "Asset Allocation",
       pieHole: 0.4,
-      legend: 'none',
-      width:250,
+      legend: {position: 'left'},
       pieSliceText:'none',
+      backgroundColor: "transparent",
+      chartArea: {width: "90%"},
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchartL'));
@@ -27,17 +28,17 @@
 </head>
 
 <body>
-<div class="container strategiesContainer">
+<div class="strategiesContainer">
 
-  <div id="donutchartL" style="width: 250px; height: 200px; float: left"></div>
-  <div style="float: left;">
-    <h2>Medium-High Risk Portfolio</h2>
-    <h3>Number of funds held: 7-10</h3>
-    <h3>Relative Volatility: 0.5 to 0.7</h3>
+  <div id="donutchartL" class="donutchart"></div>
+  <div class="strategyLabel">
+    <h3>Medium-High Risk Portfolio</h3>
+    <h4>Number of funds held: 7-10</h4>
+    <h4>Relative Volatility: 0.5 to 0.7</h4>
   </div>
 
 </div>
-<div class="container strategyInfoContainer">
+<div class="strategyInfoContainer">
   <p>The Low Risk Portfolio seeks long-term growth by investing in a combination of sector funds, stock funds, and
 bond funds (balanced or asset allocation funds may also be held). It aims for a neutral mix of 55% stock and
 45% bond. Usually the portfolio will hold six different Fidelity Select funds, and two or three domestic funds

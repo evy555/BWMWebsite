@@ -12,6 +12,8 @@
     <!-- CSS Import -->
     <link rel='stylesheet' href="{% static 'css/master.css' %}">
 
+    <!-- Load Google Charts -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body id="page-top" data-spy='scroll' data-targe='.navbar-fixed-top' data-offset="95">
 
@@ -41,8 +43,7 @@
         </ul>
       </div>
 
-
-    </div>
+      </div>
   </nav>
 
   <br>
@@ -57,8 +58,8 @@
   <section class="container-fluid" id='footer'>
     <table id="legal">
       <tr>
-        <td><a href="#">Legal Information</a></td>
-        <td><a href="#">Privacy Policy</a></td>
+        <td><a href="{% static 'legal/Form_ADVII.pdf' %}">Legal Information</a></td>
+        <td><a href="/privacy/">Privacy Policy</a></td>
       </tr>
     </table>
 
@@ -66,8 +67,8 @@
 
       <tr id="affiliateLinks">
         <caption><h3>Affiliates</h3></caption>
-        <td><a href="#"><img src="{% static 'images/Fidelity1.png' %}" alt="" class='affiliate' id="FidelityLogo"></a></td>
-        <td><a href="#"><img src="{% static 'images/fmi_logo.jpg' %}" alt="" class='affiliate' id="FMANDILogo"></a></td>
+        <td><a href="https://www.fidelity.com/"><img src="{% static 'images/Fidelity1.png' %}" alt="" class='affiliate' id="FidelityLogo"></a></td>
+        <td><a href="http://www.fmandi.com/index.php"><img src="{% static 'images/fmi_logo.jpg' %}" alt="" class='affiliate' id="FMANDILogo"></a></td>
       </tr>
     </table>
   </section>

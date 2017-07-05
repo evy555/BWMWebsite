@@ -14,9 +14,10 @@
     var options = {
       title: "Asset Allocation",
       pieHole: 0.4,
-      legend: 'none',
-      width:250,
+      legend: {position: 'left'},
       pieSliceText:'none',
+      backgroundColor: "transparent",
+      chartArea: {width: "90%"},
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchartML'));
@@ -26,17 +27,17 @@
 </head>
 
 <body>
-<div class="container strategiesContainer">
+<div class="strategiesContainer">
 
-  <div id="donutchartML" style="width: 250px; height: 200px; float: left"></div>
-  <div style="float: left;">
-    <h2>Medium-Low Risk Portfolio</h2>
-    <h3>Number of funds held: 7-10</h3>
-    <h3>Relative Volatility: 0.6 to 1.0</h3>
+  <div id="donutchartML" class="donutchart"></div>
+  <div class="strategyLabel">
+    <h3>Medium-Low Risk Portfolio</h3>
+    <h4>Number of funds held: 7-10</h4>
+    <h4>Relative Volatility: 0.6 to 1.0</h4>
   </div>
 
 </div>
-<div class="container strategyInfoContainer">
+<div class="strategyInfoContainer">
   <p>The Medium-Low Risk Portfolio seeks long-term growth by investing in a combination of sector funds, stock
 funds, and bond funds (balanced or asset allocation funds may also be held). It aims for a neutral mix of 80%
 stock and 20% bond. Usually the portfolio will hold six different Fidelity Select funds, and two or three domestic

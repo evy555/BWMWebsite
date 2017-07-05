@@ -13,9 +13,10 @@
     var options = {
       title: "Asset Allocation",
       pieHole: 0.4,
-      legend: 'none',
-      width:250,
+      legend: {position: 'left'},
       pieSliceText:'none',
+      backgroundColor: "transparent",
+      chartArea: {width: "90%"},
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchartI'));
@@ -25,17 +26,17 @@
 </head>
 
 <body>
-<div class="container strategiesContainer">
+<div class="strategiesContainer">
 
-  <div id="donutchartI" style="width: 250px; height: 200px; float: left"></div>
-  <div style="float: left;">
-    <h2>Income Portfolio</h2>
-    <h3>Number of funds held: 3-6</h3>
-    <h3>Relative Volatility: 0.0 to 0.4</h3>
+  <div id="donutchartI" class="donutchart"></div>
+  <div class="strategyLabel">
+    <h3>Income Portfolio</h3>
+    <h4>Number of funds held: 3-6</h4>
+    <h4>Relative Volatility: 0.0 to 0.4</h4>
   </div>
 
 </div>
-<div class="container strategyInfoContainer">
+<div class="strategyInfoContainer">
   <p>The Income Portfolio seeks a high level of current income by investing in bond funds. Typically it will hold 3-6
 funds, representing over 1000 unique bond positions. Foreign bond exposure will usually range between 0-15%.
 Bond funds from Fidelity’s retail lineup are normally used, but we may opt to hold non-Fidelity income funds if a

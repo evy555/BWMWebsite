@@ -14,9 +14,10 @@
     var options = {
       title: "Asset Allocation",
       pieHole: 0.4,
-      legend: 'none',
-      width:250,
+      legend: {position: 'left'},
       pieSliceText:'none',
+      backgroundColor: "transparent",
+      chartArea: {width: "90%"},
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('donutchartNSL'));
@@ -26,17 +27,17 @@
 </head>
 
 <body>
-<div class="container strategiesContainer">
+<div class="strategiesContainer">
 
-  <div id="donutchartNSL" style="width: 250px; height: 200px; float: left"></div>
-  <div style="float: left;">
-    <h2>Non-Sector Low Risk Portfolio</h2>
-    <h3>Number of funds held: 3-6</h3>
-    <h3>Relative Volatility: 0.5 to 0.7</h3>
+  <div id="donutchartNSL" class="donutchart"></div>
+  <div class="strategyLabel">
+    <h3>Non-Sector Low Risk Portfolio</h3>
+    <h4>Number of funds held: 3-6</h4>
+    <h4>Relative Volatility: 0.5 to 0.7</h4>
   </div>
 
 </div>
-<div class="container strategyInfoContainer">
+<div class="strategyInfoContainer">
   <p>The Non-Sector Low Risk Portfolio seeks long-term growth by investing in diversified stock funds, asset allocation
 funds, and income funds, with a neutral mix of 55% stock and 45% bond. Typically it will hold 3-6 domestic
 funds, representing several hundred unique stock positions, and more than 1000 unique bond positions. Foreign

@@ -17,6 +17,3 @@ function openTab(evt, tabName, section) {
   evt.currentTarget.className += " active";
 
 }
-
-
-// Mouse over picture funtionality for our team

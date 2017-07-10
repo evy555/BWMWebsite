@@ -271,11 +271,6 @@ div.tabStrategies button.active {
   width: 100%;
 }
 
-#scheduleCall {
-  border-radius: 10px;
-  padding-top: 10px;
-}
-
 #contactButton {
   text-align: center;
   padding-top: 1%;
@@ -364,6 +359,7 @@ caption {
 }
 
 #Fees {
+  float: left;
   height: 100%;
   width: 100%;
   padding-left: 22.5%;
@@ -389,4 +385,9 @@ caption {
   justify-content: center;
   align-items: center;
 
+}
+
+.cirForm {
+  text-align: center;
+  justify-content: center;
 }

@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'contactus/$', views.ContactUs.as_view(), name='contactus'),
     url(r'thankyou/$', views.ThankYou.as_view(), name='thankyou'),
     url(r'privacy/$', views.PrivacyPolicy.as_view(), name='privacy'),
+    url(r'cir/$', views.ConfidentialReview.as_view(), name='cir'),
     # url(r'^ModelDescriptions/',include('ModelDescriptions.urls',namespace='ModelDescriptions')),
     # url(r'^Viewpoints/',include('Viewpoints.urls',namespace='Viewpoints')),
 ]

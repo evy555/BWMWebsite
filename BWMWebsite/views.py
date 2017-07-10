@@ -8,6 +8,10 @@ from . import forms
 class HomePage(TemplateView):
     template_name = 'index.html'
 
+
+class ConfidentialReview(TemplateView):
+    template_name = 'contactus/CIR.html'
+
 class ContactUs(FormView):
     template_name ='contactus/contactusForm.html'
     form_class = forms.ContactForm

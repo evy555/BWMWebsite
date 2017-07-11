@@ -26,7 +26,7 @@ SECRET_KEY = 'd+()@vmoa%@43^_^namk3*##h#z3w7qg4=20f(-vb-07apmz3w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['redbballplayer.pythonanywhere.com']
 
 
 # Application definition

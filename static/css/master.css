@@ -88,7 +88,7 @@
   min-height: 10px;
   background-size: cover;
   height: 100%;
-  padding: 50px;
+  padding: 10px;
   word-wrap: break-word;
   position: relative;
 }
@@ -229,8 +229,8 @@ div.tabStrategies button.active {
 
 .tabcontentStrategies {
   float: left;
-  padding: 0px 12px;
-  width: 70%;
+  padding: 0px 0px;
+  width: 85%;
   border-left: none;
   height: 100%;
   -webkit-animation: fadeEffect 1s;
@@ -324,12 +324,12 @@ div.tabStrategies button.active {
 
 .strategyLabel {
   display: inline-block;
-  padding-left: 2%;
+  padding-left: .5%;
   padding-top: 2%
 }
 
 .donutchart {
-   width: 385px;
+   width: 330px;
    height: 200px;
    float: left
 }
@@ -390,4 +390,8 @@ caption {
 .cirForm {
   text-align: center;
   justify-content: center;
+}
+
+.contactHeader {
+  padding-top: 50px;
 }

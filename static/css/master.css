@@ -138,6 +138,11 @@
   padding-top: 230px;
 }
 
+#jumbo > h1 {
+  font-size: 3.5em;
+  color: black;
+}
+
 
 .info {
   background-color: rgba(255,255,255,1);
@@ -148,6 +153,10 @@
   padding: 10px;
   word-wrap: break-word;
   position: relative;
+}
+
+.info h1 {
+  padding-top: 3%;
 }
 
 #strategies {
@@ -166,6 +175,7 @@
 
 h1 {
   text-align: center;
+  color: rgb(130, 134, 172);
 }
 
 /*Fade Effect For Tabcontent*/
@@ -246,10 +256,11 @@ div.tabServices button.active {
 .tabcontentServices {
   margin: auto 0;
   padding: 0px 12px;
-  width: 70%;
+  width: 85%;
   border-left: none;
   -webkit-animation: fadeEffect 1s;
   animation: fadeEffect 1s;
+  display: inline-block;
 }
 
 
@@ -329,7 +340,7 @@ div.tabStrategies button.active {
 
 #contactButton {
   text-align: center;
-  padding-top: 1%;
+  padding-top: 5%;
 }
 
 /*#contact {
@@ -338,20 +349,23 @@ div.tabStrategies button.active {
 }*/
 
 #contactInfo {
-  padding-top: 2%;
+  padding-top: 6%;
+  padding-bottom: 7.5%;
 }
 
 #contactusTable td {
   text-align: center;
   width: 33.33%;
+
 }
 
 .contactTableHeaders {
-  font-size: 2em;
-  color: blue;
+  font-size: 2.5em;
+  color: rgb(130, 134, 172);
 }
 
-.contactTable {
+.contactTableInfo td {
+  padding-top: 10px;
   font-size: 1.2em;
 }
 
@@ -414,16 +428,6 @@ caption {
   color: white;
 }
 
-#Fees {
-  float: left;
-  height: 100%;
-  width: 100%;
-  padding-left: 22.5%;
-  padding-bottom: 0px;
-  justify-content: center;
-  align-items: center;
-}
-
 .feeContainer {
   height: 100%;
 }
@@ -450,4 +454,64 @@ caption {
 
 .contactHeader {
   padding-top: 50px;
+}
+
+/*Text for each section styling */
+
+#WhyBowersText {
+  padding: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  font-size: 1.25em;
+}
+
+#generalAboutUsText {
+  padding: 10%;
+  padding-top: 2.5%;
+  padding-bottom: 3%;
+  font-size: 1.25em;
+}
+
+#feeInfoText {
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  font-size: 1.25em;
+  height: 100%;
+  width: 100%;
+  padding-left: 22.5%;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#InvestmentManagementText {
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  font-size: 1.25em;
+  height: 100%;
+  width: 100%;
+  padding-left: 22.5%;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+#PlanningText {
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  font-size: 1.25em;
+  height: 100%;
+  width: 100%;
+  padding-left: 22.5%;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoText {
+  color: #393939
+}
+
+#ThankYouPage {
+  padding: 5%;
 }

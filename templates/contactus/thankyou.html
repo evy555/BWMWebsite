@@ -1,8 +1,12 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
 
 
-
-<h2><em>Thank you!</em></h2>
-<h3>We appreciate your interest.</h3>
-<h3>Your request has been received.</h3>
-<h3>We'll reply to your question within one business day.</h3>
+{% block content %}
+<div id="ThankYouPage">
+  <h2><em>Thank you!</em></h2>
+  <h3>We appreciate your interest.</h3>
+  <h3>Your request has been received.</h3>
+  <h3>We'll reply to your question within one business day.</h3>
+</div>
+{% endblock %}

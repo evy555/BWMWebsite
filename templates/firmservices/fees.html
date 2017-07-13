@@ -5,12 +5,12 @@
     // Draw the chart and set the chart values
     function drawChart() {
       var data = google.visualization.arrayToDataTable([
-      ['$Amount', 'Fee', { role: 'annotation' }],
-      ['First $100,000', .0012, '1.2%'],
-      ['Next $100,000', .001, '1.0%'],
-      ['Next $100,000', .0008, '0.8%'],
-      ['Next $100,000', .0006, '0.6%'],
-      ['>$400,000', .0004, '0.4%'],
+      ['$Amount', 'Fee', { role: 'annotation' }, { role: 'style' }],
+      ['First $100,000', .0012, '1.2%', 'color: rgb(130, 134, 172)'],
+      ['Next $100,000', .001, '1.0%', 'color: rgb(130, 134, 172)'],
+      ['Next $100,000', .0008, '0.8%', 'color: rgb(130, 134, 172)'],
+      ['Next $100,000', .0006, '0.6%', 'color: rgb(130, 134, 172)'],
+      ['>$400,000', .0004, '0.4%', 'color: rgb(130, 134, 172)'],
     ]);
 
       // Optional; add a title and set the width and height of the chart
@@ -21,7 +21,7 @@
         'enableInteractivity': false,
         backgroundColor: "transparent",
         'title': 'Management Fee Schedule',
-        titleTextStyle: {fontSize: 20, color: 'blue'},
+        titleTextStyle: {fontSize: 20, color: 'rgb(130, 134, 172)'},
       }
 
       // Display the chart inside the <div> element with id="piechart"
@@ -30,4 +30,8 @@
 }
 </script>
 
+<div class="infoText" id="feeInfoText">
+<p>We aim to keep advisory fees low by having an accelerated decline in our fee for every $100,000 up to our lowest breakpoint of 0.4% for any dollar above $400,000. Our fee is calculated
+based on the size of your entire portfolio under our management. In addition, we only use Fidelity mutual funds that offer some of the lowest expense ratios and are no-load funds. We strive to minimize fees, so that your returns are maximized.</p>
 <div id="feechart" style='width: 100%; height: 80%;'></div>
+</div>

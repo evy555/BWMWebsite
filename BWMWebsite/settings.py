@@ -126,6 +126,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Email Hosting information for contactus page
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'evansj5556@gmail.com'
-EMAIL_HOST_PASSWORD = 'Milkyway5!'
+EMAIL_HOST_PASSWORD = '$CandleStick*'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 25

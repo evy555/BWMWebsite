@@ -306,11 +306,15 @@ div.tabStrategies button.active {
 
 /*Team rmation Styling*/
 
+#teaminfo {
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+}
+
 #team {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .teamImage {
@@ -514,4 +518,32 @@ caption {
 
 #ThankYouPage {
   padding: 5%;
+}
+
+
+/*Schedule Phone Call Page*/
+
+#contactForm {
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+#contactFormText {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+#contactFormText p {
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.contactText {
+  font-size: 1.1em;
+}
+
+#contactUsFormTable {
+  width: 100%;
+  padding-left: 30%;
+  text-align: left;
 }

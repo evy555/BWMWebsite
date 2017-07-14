@@ -5,7 +5,29 @@
 {% block content %}
   <body>
     <h1 class="contactHeader">Contact Us</h1>
-    <div class="container">
+  <div class="container" id="contactUsFormPage">
+    <div class="container contactText" id="contactFormText">
+      <p>If you would like to ask a question about our services please fill out the form below and click the "Submit" button. We will respond within one business day.</p>
+      <table class="contactText" id="contactUsFormTable">
+        <tr>
+          <td>Bowers Wealth Management, Inc.</td>
+          <td>Phone: (775) 409-3712</td>
+        </tr>
+        <tr>
+          <td>9790 Gateway Drive, Suite 220</td>
+          <td>Toll Free: (888) 397-3094</td>
+        </tr>
+        <tr>
+          <td>Reno, NV 89521</td>
+        </tr>
+        <tr>
+          <td>Office Hours: Monday-Friday, 8:00am - 5:00pm PST</td>
+        </tr>
+      </table>
+
+
+    </div>
+    <div class="container" id="contactForm">
       <form action="" method="post">
         {% csrf_token %}
         <table>
@@ -15,8 +37,7 @@
         <input type="submit" class='btn btn-primary' value="Submit" id="contactusSubmitButton">
       </form>
     </div>
-    <br></br>
-
+</div>
 
 
   </body>
